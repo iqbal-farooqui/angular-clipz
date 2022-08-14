@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ContentChildren } from '@angular/core';
+import { TabComponent } from '../tab/tab.component';
 
 @Component({
   selector: 'app-tabs-container',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tabs-container.component.css']
 })
 export class TabsContainerComponent implements OnInit {
+
+  @ContentChildren(TabComponent) tabs = {}
 
   constructor() { }
 
