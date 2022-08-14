@@ -34,5 +34,9 @@ export class RegisterComponent {
       Validators.minLength(13),
       Validators.maxLength(13)
     ]),
-  })
+  });
+
+  register() {
+    
+  }
 }
